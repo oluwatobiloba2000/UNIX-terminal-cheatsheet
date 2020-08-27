@@ -109,7 +109,7 @@ class App extends React.Component {
                 < GithubOutlined  />
               </a>
             </div>
-          <Table pagination={{ position: ['topCenter', 'bottomCenter'] }} columns={columns} dataSource={data}/>
+          <Table  pagination={{ position: ['topCenter', 'bottomCenter'] }} columns={columns} dataSource={data}/>
           </Content>
           <Footer>
             <div style={{textAlign: 'center'}}>&copy; 2020</div>

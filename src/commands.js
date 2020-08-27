@@ -1,7 +1,9 @@
 
 
 const data = [{
-    command: `<code>cd</code>, <code>cd ..</code>`,
+    command: `<code>cd</code>
+            <br />
+             <code>cd ..</code>`,
     usage: `In order to change a directory, type <code>cd</code> followed by the directory or a path to the directory.
             <br/>
             If we want to move up a directory we use <code>cd ..</code> and if we want to move into a directory we specify the name of the directory we are moving into. For example, if you are in your home directory and type <code>cd Desktop</code>, you should move into your Desktop directory.
@@ -33,7 +35,10 @@ const data = [{
     usage: `<code>ls</code> -> list all files in the present directory`
 }, {
     command: `<code>cat first_file</code>`,
-    usage: `Displays content of a file, <code>cat first_file</code> displays all content in the <code>first_file</code> file`
+    usage: `Displays content of a file, <code>cat first_file</code> displays all content in the <code>first_file</code> file
+    <br/>
+    we can concatenate two files using <code>cat</code>
+    <code>cat first.txt second.txt</code>`
 },
 {
     command: `<code>echo</code>`,
@@ -45,19 +50,24 @@ const data = [{
     command: `<code> > </code>`,
     usage: `<code>echo "Hello World" > first_file</code>
             <br/>
-            This command is called Redirect, It inserted <code>Hello World</code> into first_file`
+            This command is called <b>Redirect</b>, It inserted <code>Hello World</code> into first_file, it overwrites exisiting content in the file with the new value passed to it`
+},{
+    command: `<code> >> </code>`,
+    usage: `<code>echo "Hello World" >> first_file</code>
+            <br/>
+            This command is called <b>Redirect</b>, It inserted <code>Hello World</code> into first_file, it appends to the existing content and does not overwrite the existing content in the file`
 }, {
     command: `<code> open </code>`,
     usage: `<code>open .</code> -> This command opens all files in the current working directory
             <br/>
             <code>code first_file</code> -> This command opens first_file in the current working directory
             <br/>
-            NOTE:  If you are on Windows, the command to do this is <code>start NAME_OF_FILE</code>`
+            <b>NOTE</b>:  If you are on Windows, the command to do this is <code>start NAME_OF_FILE</code>`
 }, {
     command: `<code> mv </code>`,
     usage: `<code>mv test.txt first_folder/test.txt</code> -> This command moves <code>test.txt</code> to <code>first_folder</code>
             <br/>
-            NOTE:  test.txt and first_folder must be present in your present working directory`
+            <b>NOTE</b>:  test.txt and first_folder must be present in your present working directory`
 }, {
     command: `<code> cp </code>`,
     usage: `cp PATH_TO_ORIGINAL_FILE PATH_TO_COPIED_FILE
@@ -166,6 +176,48 @@ const data = [{
     <code>sudo chown root somefile.txt</code>
     <br/>
     The <code>sudo</code> command gives you the powers of the <code>root</code> user for just one command and will ask you for your password in order to preform the command.`
+},{
+    command: `<code>sort</code>`,
+    usage: `
+    <code>sort names.txt</code>
+    <br/>
+    It will sort the content of the file <code>names.txt</code> alphabetically.`
+},{
+    command: `<code><</code>`,
+    usage: `
+    <code>sort < names.txt > sorted.txt</code>
+    sort lines of a text <em>file</em>
+    <br/>
+    <b>eg.</b><br/>
+    we want to take the contents of <code>names.txt</code>, redirect that to the <code>sort</code> command, and then send that output to a file called <code>sorted.txt</code>, The redirection will look like this: <code>sort < names.txt > sorted.txt</code>. This will now create a new file called <code>sorted.txt</code> with the names sorted alphabetically!`
+},{
+    command: `<code>head</code>`,
+    usage: `<code>head</code> displays the first line of a file
+    <br/>
+    <b>NOTE</b>: using the <code>-n</code> flag we can specify the number of lines`
+},{
+    command: `<code>tail</code>`,
+    usage: `<code>tail</code> displays the last line of a file
+    <br/>
+    <b>NOTE</b>: using the <code>-n</code> flag we can specify the number of lines`
+},{
+    command: `<code>uniq</code>`,
+    usage: `<code>uniq</code> removes duplicated lines
+    <br/>
+    <b>NOTE</b>: Your data must be <b>sorted</b> for this to work`
+},{
+    command: `<code>wc</code>`,
+    usage: `<code>wc</code> word, line, character and byte count
+    <br/>
+    <b>NOTE</b>: Your data must be <b>sorted</b> for this to work`
+},{
+    command: `<code> | </code>`,
+    usage: `<code>|</code> Piping
+    <br/>
+    <b>Use cases</b>
+    <br>
+    <code>cat first.txt second.txt | sort</code>
+        `
 },
 
 // add more here
