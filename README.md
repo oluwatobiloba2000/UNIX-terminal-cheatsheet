@@ -1,11 +1,11 @@
+# This App was made with Ant design and create react app ✨
 
+[Create React App](https://facebook.github.io/create-react-app/) + [Ant Design](https://ant.design).
+
+# clone the repo
+`git clone `
 
 ## Preview
-
-```bash
-$ npm install
-$ npm start
-```
 
 or:
 
