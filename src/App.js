@@ -100,12 +100,12 @@ class App extends React.Component {
       <Layout>
           <Header>
             <div style={{color: 'white'}} className="title">
-              UNIX TERMINAL COMMAND CHEETSHEET
+              UNIX TERMINAL COMMAND CHEATSHEET
             </div>
           </Header>
           <Content>
             <div>
-              <a className="github-link" href="https://drive.google.com/file/d/1pnFG-23cQg_ngcKj1tAuineRZeguXIwf/view" rel="noopener noreferrer" target = {"_blank"} >
+              <a className="github-link" href="https://github.com/oluwatobiloba2000/UNIX-terminal-cheatsheet" rel="noopener noreferrer" target = {"_blank"} >
                 < GithubOutlined  />
               </a>
             </div>
