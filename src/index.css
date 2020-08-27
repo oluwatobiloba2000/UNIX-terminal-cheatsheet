@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    color: red;
+    background: #cfcccca8;
+    padding: 0px 5px;
+}
+
+.title{
+  font-size: 2em;
+}
+
+.search-keywords{
+  display: none;
+}
+
+.github-link{
+  font-size: 35px;
+    color: black;
+    margin-left: 8px;
+}
+
+@media all and (max-width: 660px){
+  .title{
+    font-size: 1em;
+  }
+}
+
+@media all and (max-width: 500px){
+  .title{
+    font-size: 10px;
+  }
+}
