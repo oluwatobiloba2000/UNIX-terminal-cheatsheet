@@ -3,14 +3,13 @@
 [Create React App](https://facebook.github.io/create-react-app/) + [Ant Design](https://ant.design).
 
 # clone the repo
-`git clone `
+`git clone https://github.com/oluwatobiloba2000/UNIX-terminal-cheetsheet.git`
 
 ## Preview
 
-or:
 
 ```bash
-$ yarn
+$ yarn install
 $ yarn start
 ```
 
